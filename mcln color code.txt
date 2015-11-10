@@ -1,0 +1,1 @@
+mcln	"Mode B:""DAPI-A"""	"Mode G:""FITC-A"""	"Mode R:""YG PE-A"""1	24164	32438	353882	22644	19371	31515
