@@ -343,7 +343,7 @@ else
             XFP_InClonalMaskQuery_temp(:,2)=inpolygon(CorrTHETADataPtbinEdge(XFP_InClonalMaskQuery_temp(:,1),1),CorrPHIDataPtbinEdge(XFP_InClonalMaskQuery_temp(:,1),1),Batch_ClonalMask_HullCorrTHETAPHI_CellArray{ii,kk}.CorrTHETAvertices,Batch_ClonalMask_HullCorrTHETAPHI_CellArray{ii,kk}.CorrPHIvertices);
             XFP_InClonalMaskQuery(XFP_InClonalMaskQuery_temp(find(XFP_InClonalMaskQuery_temp(:,2)),1),1)=kk;
 
-            XFP_InCloneMaskCellCt(kk,1)=size(find(XFP_InClonalMaskQuery_temp(:,2)),1);
+            XFP_InCloneMaskCellCt(kk,1)=XFP_InCloneMaskCellCt(kk,1)+size(find(XFP_InClonalMaskQuery_temp(:,2)),1);
 
             XFP_InClonalMaskQuery_temp(find(XFP_InClonalMaskQuery_temp(:,2)),:)=[];
 
